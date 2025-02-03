@@ -9,6 +9,7 @@ body {
 .content {
     flex: 1;
 }
+
 .header {
     background-color: #666;
     color: white;
@@ -21,6 +22,12 @@ body {
     font-size: 24px;
     font-weight: bold;
 }
+
+.header .logo img {
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
 .header nav ul {
     list-style: none;
     display: flex;
