@@ -1,19 +1,19 @@
-body{
+body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
+
 
 .content {
     flex: 1;
 }
 
 .header {
-    background-color: #666;
-    color: white;
+    background-color: #06265d;
+    color: #fafafa;
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
@@ -72,7 +72,9 @@ body{
 }
 
 
-
+.negrito {
+    font-weight: bold;
+}
 
 
 
@@ -85,4 +87,6 @@ body{
     bottom: 0;
     width: 100%;
 }
+
+
 
