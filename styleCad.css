@@ -45,9 +45,31 @@ body{
     text-decoration: none;
 }
 
+.topico {
+    text-align: left;
+    padding: 15px;
+}
+
+.topico p {
+    text-align: left;
+    margin-left: 3px;
+}
+
+.cadastro_prod {
+    text-align: left;
+    padding: 10px;
+}
 
 
 
+.topico img {
+    max-width: 100%;       /* Imagem nunca ultrapassará a largura do contêiner */
+    height: auto;          /* Mantém a proporção da imagem */
+    display: block;        /* Remove espaço embaixo da imagem */
+    border: 1px solid #ddd; /* Borda leve para destaque */
+    border-radius: 8px;    /* Bordas arredondadas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+}
 
 
 
@@ -59,7 +81,7 @@ body{
     color: white;
     text-align: center;
     padding: 15px;
-    position: fixed;
+    flex-grow:none;
     bottom: 0;
     width: 100%;
 }
