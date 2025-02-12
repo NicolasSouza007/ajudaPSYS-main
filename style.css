@@ -9,8 +9,9 @@ body {
 .content {
     flex: 1;
 }
+
 .header {
-    background-color: #666;
+    background-color: #06265d;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -21,6 +22,12 @@ body {
     font-size: 24px;
     font-weight: bold;
 }
+
+.header .logo img {
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
 .header nav ul {
     list-style: none;
     display: flex;
@@ -50,7 +57,7 @@ body {
     border: 1px solid #ccc;
 }
 .search-bnt {
-    background-color: purple;
+    background-color: #06265d;
     color: white;
     padding: 10px;
     border-radius: 50%;
@@ -75,8 +82,12 @@ body {
     transition: background-color 0.3s;
 }
 .category:hover {
-    background-color: #ddd;
+    background-color: #3272e0;
+    
 }
+
+
+
 .footer {
     background-color: #333;
     color: white;
