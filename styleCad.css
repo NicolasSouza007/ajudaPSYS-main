@@ -18,6 +18,7 @@ body {
     justify-content: space-between;
     padding: 15px 30px;
     align-items: center;
+    flex-wrap: wrap; /* Adicionado para ajustar em telas pequenas */
 }
 
 .header .logo {
@@ -26,14 +27,19 @@ body {
 }
 
 .header .logo img {
-    width: 100px; /* Ajuste conforme necessário */
+    width: 80px; /* Ajuste conforme necessário */
     height: auto; /* Mantém a proporção da imagem */
+}
+
+.video {
+    padding: 10px;
 }
 
 .header nav ul{
     list-style: none;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap; /* Adapta o menu em várias linhas, se necessário */
 }
 
 .header nav ul li {
