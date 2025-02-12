@@ -24,7 +24,9 @@ body {
 }
 
 .header .logo img {
-    width: 100px; /* Ajuste conforme necessário */
+
+    width: 80px; /* Ajuste conforme necessário */
+
     height: auto; /* Mantém a proporção da imagem */
 }
 

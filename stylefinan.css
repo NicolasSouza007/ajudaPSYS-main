@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+}
+
+
+.content {
+    flex: 1;
+}
+
+.header {
+    background-color: #06265d;
+    color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+    flex-wrap: wrap; /* Adicionado para ajustar em telas pequenas */
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .logo img {
+    width: 80px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.video {
+    padding: 10px;
+}
+
+.header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Adapta o menu em várias linhas, se necessário */
+}
+
+.header nav ul li {
+    display: inline;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.topico {
+    text-align: left;
+    padding: 15px;
+}
+
+.topico p {
+    text-align: left;
+    margin-left: 3px;
+}
+
+.cadastro_prod {
+    text-align: left;
+    padding: 10px;
+}
+
+
+
+.topico img {
+    max-width: 100%;       /* Imagem nunca ultrapassará a largura do contêiner */
+    height: auto;          /* Mantém a proporção da imagem */
+    display: block;        /* Remove espaço embaixo da imagem */
+    border: 1px solid #ddd; /* Borda leve para destaque */
+    border-radius: 8px;    /* Bordas arredondadas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+}
+
+
+.negrito {
+    font-weight: bold;
+}
+
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    flex-grow:none;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    -webkit-user-select: none; /* Chrome, Safari e outros navegadores baseados em WebKit */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Navegadores modernos */
+}
+
+
