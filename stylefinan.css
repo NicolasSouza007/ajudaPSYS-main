@@ -95,5 +95,11 @@ body {
     width: 100%;
 }
 
+body {
+    -webkit-user-select: none; /* Chrome, Safari e outros navegadores baseados em WebKit */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Navegadores modernos */
+}
 
 
