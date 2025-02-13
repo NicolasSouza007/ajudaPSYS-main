@@ -100,14 +100,17 @@ body {
 }
 
 .artigos {
-    width: 300px;
-    background: #fff;
-    padding: 20px;
+    width: 500px;
+    background: #ffffff;
+    padding: 40px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 0; /* Remove qualquer margem superior */
+    text-decoration: none;
 }
 
+.artigos a{
+    text-decoration: none;
+}
 
 @media (max-width: 1024px) {
     body {
