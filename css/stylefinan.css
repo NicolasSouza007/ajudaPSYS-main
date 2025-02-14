@@ -92,17 +92,45 @@ body {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 15px;
-    flex-grow:none;
+    padding: 10px;
+    /* Remover position: fixed */
     bottom: 0;
-    /* width: 100%; */
 }
 
-body {
-    -webkit-user-select: none; /* Chrome, Safari e outros navegadores baseados em WebKit */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Navegadores modernos */
+.rede img {
+    width: 20px;
+    /* Aumentei o tamanho para melhor visualização */
+    height: 20px;
+    transition: transform 0.2s ease;
+    padding: 4px;
 }
 
+.rede img:hover {
+    transform: scale(1.2);
+}
+
+.coluna {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.rede {
+    flex: 1;
+    max-width: 300px;
+
+}
+
+.rede p {
+    margin-bottom: 10px;
+    font-size: 15PX;
+}
+
+
+
+.rede a {
+    /* font-size: 24px; */
+    transition: color 0.3s;
+    text-decoration: none;
+}
 
