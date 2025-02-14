@@ -1,10 +1,10 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 .content {
     flex: 1;
