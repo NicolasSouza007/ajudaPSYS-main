@@ -6,6 +6,7 @@ body {
     font-weight: weight;
     font-style: normal;
     text-align: center;
+    background-color: #eee4e4;
 }
 
 .content {
@@ -54,7 +55,7 @@ body {
 }
 
 .banner {
-    background-color: #bbb;
+    background-color: #709ac9;
     padding: 50px 20px;
 }
 
@@ -75,7 +76,7 @@ body {
 
 .search-bnt {
     background-color: #06265d;
-    color: white;
+    color: #eee4e4;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -120,7 +121,7 @@ body {
 
 
 .footer {
-    background-color: #333;
+    background-color: #7b95dd;
     color: white;
     text-align: center;
     padding: 10px;
