@@ -7,6 +7,7 @@ body {
     font-style: normal;
     text-align: center;
 }
+
 .content {
     flex: 1;
 }
@@ -19,6 +20,7 @@ body {
     padding: 15px 30px;
     align-items: center;
 }
+
 .header .logo {
     display: flex;
     font-size: 24px;
@@ -29,9 +31,11 @@ body {
 
 .header .logo img {
 
-    width: 80px; /* Ajuste conforme necessário */
+    width: 80px;
+    /* Ajuste conforme necessário */
 
-    height: auto; /* Mantém a proporção da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
 }
 
 .header nav ul {
@@ -39,29 +43,35 @@ body {
     display: flex;
     gap: 20px;
 }
+
 .header nav ul li {
     display: inline;
 }
+
 .header nav ul li a {
     color: white;
     text-decoration: none;
 }
+
 .banner {
     background-color: #bbb;
     padding: 50px 20px;
 }
+
 .search-box {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
+
 .search-txt {
     padding: 10px;
     width: 300px;
     border-radius: 20px;
     border: 1px solid #ccc;
 }
+
 .search-bnt {
     background-color: #06265d;
     color: white;
@@ -69,6 +79,7 @@ body {
     border-radius: 50%;
     margin-left: 10px;
 }
+
 .categories {
     display: flex;
     justify-content: center;
@@ -76,6 +87,7 @@ body {
     gap: 20px;
     padding: 50px 20px;
 }
+
 .category {
     border: 2px solid;
     border-radius: 10px;
@@ -87,9 +99,10 @@ body {
     display: inline-block;
     transition: background-color 0.3s;
 }
+
 .category:hover {
     background-color: #3272e0;
-    
+
 }
 
 
@@ -100,12 +113,14 @@ body {
     text-align: center;
     padding: 10px;
     width: 100%;
-    position: fixed; /* Remover position: fixed */
+    position: fixed;
+    /* Remover position: fixed */
     bottom: 0;
 }
 
 .rede img {
-    width: 20px;  /* Aumentei o tamanho para melhor visualização */
+    width: 20px;
+    /* Aumentei o tamanho para melhor visualização */
     height: 20px;
     transition: transform 0.2s ease;
     padding: 4px;
@@ -119,25 +134,23 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
-  
-  .rede{
+}
+
+.rede {
     flex: 1;
     max-width: 300px;
-    
-  }
-  
-  .rede p {
+
+}
+
+.rede p {
     margin-bottom: 10px;
     font-size: 15PX;
-  }
-  
-  
-  
-  .rede a {
+}
+
+
+
+.rede a {
     /* font-size: 24px; */
     transition: color 0.3s;
     text-decoration: none;
-  }
-  
-  
+}
