@@ -4,6 +4,7 @@ body {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+  
 }
 
 
@@ -69,11 +70,10 @@ body {
     text-align: left;
     padding: 10px;
     font-size: 15px;
+    margin-left: 15%;
 }
 
-.topico h2{
-    text-align: center;
-}
+
 
 .topico p {
     text-align: left;
@@ -101,35 +101,27 @@ body {
     font-weight: bold;
 }
 
-/* .conteudo {
+.conteudo {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 15px;
-
-} */
-
-.topico {
-    flex: 1;
-    max-width: 800px;
-    text-align: center;
 }
 
-.topico h2 {
-    text-align: center;
+.topico {
+    flex: 1; /* O tópico ocupa o espaço restante */
+    padding-right: 20px; /* Espaçamento entre o conteúdo principal e os artigos */
+
 }
 
 .artigos {
-    width: 300px;
+    width: 500px;
     background: #ffffff;
-    padding: 20px;
+    padding: 40px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 20px;
-    height: fit-content;
+    text-decoration: none;
 }
-
 .artigos a{
     text-decoration: none;
 }
