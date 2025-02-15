@@ -4,7 +4,8 @@ body {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-      }
+
+}
 
 
 .content {
@@ -54,22 +55,6 @@ body {
     text-decoration: none;
 }
 
-.conteudo {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 15px;
-}
-
-.artigos {
-    width: 500px;
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-}
-
 .topico {
     text-align: left;
     padding: 15px;
@@ -101,14 +86,34 @@ body {
     font-weight: bold;
 }
 
+.artigos {
+    width: 500px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
 
+.artigos a{
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+    .artigos {
+        width: 100%;
+    }
+}
 
 .footer {
     background-color: #7b95dd;
     color: white;
     text-align: center;
     padding: 5px;
-    width: 100%;
     bottom: 0;
 }
 

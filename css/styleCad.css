@@ -56,9 +56,23 @@ body {
     text-decoration: none;
 }
 
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 20px;
+}
+
 .topico {
     text-align: left;
-    padding: 15px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.topico h2{
+    text-align: center;
 }
 
 .topico p {
@@ -87,25 +101,33 @@ body {
     font-weight: bold;
 }
 
-.conteudo {
+/* .conteudo {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 15px;
-}
+
+} */
 
 .topico {
-    flex: 1; /* O tópico ocupa o espaço restante */
-    padding-right: 20px; /* Espaçamento entre o conteúdo principal e os artigos */
+    flex: 1;
+    max-width: 800px;
+    text-align: center;
+}
+
+.topico h2 {
+    text-align: center;
 }
 
 .artigos {
-    width: 500px;
+    width: 300px;
     background: #ffffff;
-    padding: 40px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
 }
 
 .artigos a{
@@ -124,18 +146,18 @@ body {
 
 
 .footer {
-    background-color: #333;
+    background-color: #7b95dd;
     color: white;
     text-align: center;
-    padding: 10px;
-    /* Remover position: fixed */
+    padding: 5px;
+
     bottom: 0;
 }
 
 .rede img {
-    width: 20px;
+    width: 15px;
     /* Aumentei o tamanho para melhor visualização */
-    height: 20px;
+    height: 15px;
     transition: transform 0.2s ease;
     padding: 4px;
 }
@@ -158,7 +180,7 @@ body {
 
 .rede p {
     margin-bottom: 10px;
-    font-size: 15PX;
+    font-size: 13PX;
 }
 
 
@@ -168,4 +190,3 @@ body {
     transition: color 0.3s;
     text-decoration: none;
 }
-
