@@ -98,6 +98,8 @@ body {
 .topico {
     flex: 1; /* O tópico ocupa o espaço restante */
     padding-right: 20px; /* Espaçamento entre o conteúdo principal e os artigos */
+    font-size: 15px;
+    margin-left: 15%;
 }
 
 

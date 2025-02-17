@@ -75,6 +75,8 @@ body {
 .topico {
     text-align: left;
     padding: 15px;
+    font-size: 15px;
+    margin-left: 15%;
 }
 
 .topico p {
