@@ -90,5 +90,18 @@
             </div>
         </footer>
     </body>
+    <script>
+        window.addEventListener('load', () => {
+            const searchInput = document.querySelector('.search-txt');
+            const categories = document.querySelectorAll('.category');
+
+            searchInput.addEventListener('keyup', () => {
+                const query = searchInput.value.trim().toLowerCase();
+                categories.forEach(category => {
+                    category.style.display = category.textContent.toLowerCase().includes(query) ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
 
 </html>
