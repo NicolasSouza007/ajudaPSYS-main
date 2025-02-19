@@ -7,6 +7,9 @@ body {
     font-style: normal;
     text-align: center;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .content {
@@ -28,7 +31,7 @@ body {
     font-weight: bold;
     align-items: center;
     gap: 4px;
-    
+
 }
 
 .header .logo img {
@@ -125,11 +128,10 @@ body {
     background-color: #06265d;
     color: white;
     text-align: center;
-    padding: 5px;
+    padding: 10px 0;
     width: 100%;
-    position: fixed;
-    /* Remover position: fixed */
     bottom: 0;
+    margin-top: auto;
 }
 
 .rede img {
@@ -168,5 +170,3 @@ body {
     transition: color 0.3s;
     text-decoration: none;
 }
-
-
