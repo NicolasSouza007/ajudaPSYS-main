@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styleempre.css">
+        <link rel="stylesheet" href="/css/style.css">
         <link rel="website icon" type="png" href="/img/logotipo_branco.png">
         <title>Ajuda PSYS</title>
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -11,11 +11,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+            crossorigin="anonymous"></script>
 
     </head>
 
     <body>
+
         <header class="header">
             <div class="logo">
                 <a href="index.html">
@@ -25,64 +27,29 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="/topicos">Tópicos</a></li>
+                    <li><a href="topicos">Tópicos</a></li>
                 </ul>
             </nav>
-
-
-
-
         </header>
-        <div class="conteudo">
-            <div class="topico">
-                <h2>COMO REALIZAR VENDAS PELO FATURAMENTO</h2>
-                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/9cIWcoQONfk"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-
-
-                <p>1° Para realizar a alteração dos dados, basta clicar na logo abaixo:
-                </p>
-
-                <div class="cadastro_prod">
-                    <img src="img/empresa.png" width="280" height="200">
-                </div>
-                <p>2° Clique em Cadastrar</p>
-                <img src="img/Cadastro_cadastrar.png">
-                <p>3° Preencha os campos a seguir:<br><br>Observação: A bolinha amarela em cada campo representa um
-                    campo
-                    Obrigatório a ser preenchido</p>
-                <p><span class="negrito">Campos Obrigatórios</span></p>
-                <ul>
-                    <li><b>Nome do Produto</b></li>
-                    <li><b>Preço de Venda</b></li>
-                    <li><b>Código de Barras</b></li>
-                    <li><b>Unidade de Medida</b></li>
-                    <li><b>NCM</b></li>
-
-                </ul>
-
-                <img src="img/Cadastro_Informaçoes.png" width="1000" height="600">
-                <br>
-                <p>4° Após preencher os campos e clicar em Salvar, vai aparecer uma mensagem de Produto cadastrado.</p>
-                <img src="img/Cadastro_ProdSalvo.png" width="1000" height="600">
-
+        <div class="banner">
+            <h1>Central de ajuda</h1>
+            <h2>Encontre as informações que você precisa.</h2>
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Pesquise aqui">
+                <button class="search-bnt">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
-
-            <aside class="artigos">
-                <h3>Artigos Relacionados</h3>
-                <ul>
-                    <li><a href="Cliente.html">Como realizar o cadastro de clientes</a></li>
-                    <li><a href="Financeiro.html">Como reazliar um cadastro de contas a pagar </a></li>
-                    <li><a href="Contas_a_receber.html">Como realizar um cadastro de contas a receber</a></li>
-                    <li><a href="Estoque.html">Como realizar uma movimentação de estoque</a></li>
-
-                </ul>
-            </aside>
         </div>
-
-
+        <div class="categories">
+            <a href="Cadastro.html" class="category">Como Realizar uma Movimentação de Caixa</a>
+            <a href="Cadastro.html" class="category">Como identificar o cliente na venda</a>
+            <a href="Clientepf.html" class="category">Como identificar o vendedor na venda</a>
+            <a href="Clientepj.html" class="category">Como realizar uma venda</a>
+            <a href="Financeiro.html" class="category">Como configurar impressora no PDV</a>
+            <a href="Financeiro_rec.html" class="category">Como realizar uma venda Delivery</a>
+            <a href="Financeirocred.html" class="category">Como cancelar um item da venda</a>
+        </div>
         <footer class="footer">
             <div class="coluna">
                 <div class="rede">
@@ -108,7 +75,7 @@
                             class="rede" width="20px" height="20px">
                     </a>
                     <a href="https://www.youtube.com" target="_blank">
-                        <img src="img/youtube.png" Imagem Clicável" class="rede" width="20px" height="20px">
+                        <img src="img/youtube.png" alt="Imagem Clicável" class="rede" width="20px" height="20px">
                     </a>
                 </div>
                 <div class="rede">
@@ -124,5 +91,18 @@
             </div>
         </footer>
     </body>
+    <script>
+        window.addEventListener('load', () => {
+            const searchInput = document.querySelector('.search-txt');
+            const categories = document.querySelectorAll('.category');
+
+            searchInput.addEventListener('keyup', () => {
+                const query = searchInput.value.trim().toLowerCase();
+                categories.forEach(category => {
+                    category.style.display = category.textContent.toLowerCase().includes(query) ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
 
 </html>
