@@ -35,19 +35,19 @@
             <h1>Central de ajuda</h1>
             <h2>Encontre as informações que você precisa.</h2>
             <div class="search-box">
-                <input class="search-txt" type="text" name="" placeholder="Pesquise aqui">
+                <input id="search-input" class="search-txt" type="text" name="" placeholder="Pesquise aqui">
                 <button class="search-bnt">
                     <i class="fas fa-search"></i>
                 </button>
             </div>
         </div>
-        <div class="categories">
-            <a href="cadastros.html" class="category">Cadastros</a>
-            <a href="Financeiro.html" class="category">Financeiro</a>
-            <a href="Estoque.html" class="category">Estoque</a>
-            <a href="empresa.html" class="category">Dados da Empresa</a>
-            <a href="Faturamento.html" class="category">Faturamento</a>
-            <a href="Fiscal.html" class="category">Arquivos Fiscais</a>
+        <div id="categories" class="categories">
+            <a href="cadastros.html" class="category original-category">Cadastros</a>
+            <a href="Financeiro.html" class="category original-category">Financeiro</a>
+            <a href="Estoque.html" class="category original-category">Estoque</a>
+            <a href="empresa.html" class="category original-category">Dados da Empresa</a>
+            <a href="Faturamento.html" class="category original-category">Faturamento</a>
+            <a href="Fiscal.html" class="category original-category">Arquivos Fiscais</a>
         </div>
         <footer class="footer">
             <div class="coluna">
@@ -90,18 +90,6 @@
             </div>
         </footer>
     </body>
-    <script>
-        window.addEventListener('load', () => {
-            const searchInput = document.querySelector('.search-txt');
-            const categories = document.querySelectorAll('.category');
-
-            searchInput.addEventListener('keyup', () => {
-                const query = searchInput.value.trim().toLowerCase();
-                categories.forEach(category => {
-                    category.style.display = category.textContent.toLowerCase().includes(query) ? 'block' : 'none';
-                });
-            });
-        });
-    </script>
+    <script src="js/script.js"></script>
 
 </html>
